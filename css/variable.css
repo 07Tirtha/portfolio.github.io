@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --star-color: #fff;
+  --canvas-bg: #000;
+  --splash-bg: #000;
+  --transition-duration: 0.2s;
+  --ripple-duration: 0.5s;
+}
