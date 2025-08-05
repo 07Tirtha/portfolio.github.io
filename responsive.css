@@ -1,6 +1,0 @@
-/* Responsive Design */
-@media (max-width: 600px) {
-  .tab-bar { width: 90%; padding: 0 0.5rem; height: 40px; }
-  .main-text { font-size: 2rem; left: 8vw; margin-left: 0; }
-  .cursor-follower { display: none; }
-}
