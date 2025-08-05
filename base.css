@@ -1,0 +1,9 @@
+/* Base Layout */
+html, body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}

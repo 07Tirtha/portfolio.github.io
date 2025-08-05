@@ -1,0 +1,60 @@
+:root {
+  --ripple-duration: 0.6s;
+}
+
+/* Light Theme */
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --star-color: #000;
+  --canvas-bg: #fff;
+  --splash-bg: #fff;
+}
+
+/* Dark Theme */
+.dark-mode {
+  --bg-color: #000;
+  --text-color: #fff;
+  --star-color: #fff;
+  --canvas-bg: #000;
+  --splash-bg: #000;
+}
+
+/* === THEME REVEAL RIPPLE OVERLAY === */
+.theme-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 1;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    clip-path var(--ripple-duration,0.6s) cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-clip-path var(--ripple-duration,0.6s) cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: clip-path, opacity;
+}
+
+.theme-overlay.ripple-fade-out {
+  opacity: 0;
+}
+
+.theme-overlay.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --star-color: #000;
+  --canvas-bg: #fff;
+  --splash-bg: #fff;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.theme-overlay.dark-mode {
+  --bg-color: #000;
+  --text-color: #fff;
+  --star-color: #fff;
+  --canvas-bg: #000;
+  --splash-bg: #000;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
